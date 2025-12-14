@@ -1,63 +1,19 @@
 {
-    "manifest_version": 2,
-    "package": "random_images",
-    "name": "Random Image Per Card",
-    "version": "1.0.0",
-    "author": "Yuwa",
-    "description": "Shows a random image from collection.media/<folder_name> each time a card is shown, with configurable options (question/answer side, size, avoid repeat, folder name).",
-    "homepage": "",
-    "config": {
-      "enabled": true,
-      "show_on_question": true,
-      "show_on_answer": true,
-      "folder_name": "random_images",
-      "max_width_percent": 80,
-      "max_height_vh": 60,
-      "avoid_repeat": true
-    },
-    "config_schema": {
-      "enabled": {
-        "type": "boolean",
-        "default": true,
-        "description": "Enable or disable the random image feature."
-      },
-      "show_on_question": {
-        "type": "boolean",
-        "default": true,
-        "description": "Show the random image on the question side."
-      },
-      "show_on_answer": {
-        "type": "boolean",
-        "default": true,
-        "description": "Show the random image on the answer side."
-      },
-      "folder_name": {
-        "type": "string",
-        "default": "random_images",
-        "description": "Subfolder in collection.media where random images are stored."
-      },
-      "max_width_percent": {
-        "type": "number",
-        "default": 80,
-        "description": "Maximum image width (percent)."
-      },
-      "max_height_vh": {
-        "type": "number",
-        "default": 60,
-        "description": "Maximum image height (vh). Set 0 for no limit."
-      },
-      "avoid_repeat": {
-        "type": "boolean",
-        "default": true,
-        "description": "Avoid showing the same image twice in a row."
-      }
-    },
-    "addon_root": ".",
-    "files": [
-      "__init__.py",
-      "manifest.json",
-      "config.json"
-    ],
-    "min_anki_version": "24.0"
-  }
-  
+  "name": "anki-random-images",
+  "version": "0.1.0",
+  "description": "This add-on displays a random image each time a card is shown. Images are loaded from a folder inside your Anki collection.media directory. All behavior can be customized through config.json.",
+  "auther": "Yuwa Yanagitani",
+  "homepage": "https://github.com/yuwayanagitani/anki-random-images",
+  "license": "MIT",
+  "min_anki_version": "23.10.0",
+  "max_anki_version": null,
+  "requirements": [],
+  "entry_point": "__init__.py",
+  "config_file": "config.json",
+  "tags": [
+    "anki",
+    "addon",
+    "images"
+  ],
+  "notes": ""
+}
