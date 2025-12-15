@@ -337,7 +337,7 @@ def inject_random_image(text: str, card, kind: str) -> str:
 
     extra_html = f"""
 <div style="text-align:center; margin-top:15px;">
-  <img src="{img_src}" style="{style_attr}" title="{title_attr}>
+  <img src="{img_src}" style="{style_attr}" title="{title_attr}">
 {caption_html}</div>
 """
     return text + extra_html
